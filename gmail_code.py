@@ -1,5 +1,4 @@
 from selenium import webdriver
-import pyttsx3 as p
 import time
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.action_chains import ActionChains
