@@ -1,5 +1,4 @@
 from selenium import webdriver
-import pyttsx3 as p
 import time
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.action_chains import ActionChains
@@ -24,9 +23,10 @@ time.sleep(10)
 to_address = driver.find_element_by_xpath('//*[@id=":99"]')
 to_address.send_keys('Email id of the person whom you want to send')
 input_subject = driver.find_element_by_xpath('//*[@id=":8r"]')
-input_subject.send_keys('Hola')
+input_subject.send_keys('Message you want to send')
 email_content = driver.find_element_by_xpath('//*[@id=":9w"]')
 email_content.send_keys('Testing')
 time.sleep(5)
 sendElem = driver.find_element_by_id(":8h")
 sendElem.click()
+driver.quit()
